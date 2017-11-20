@@ -155,6 +155,7 @@ public class MainActivity extends ActionBarActivity {
         view.game.canUndo = settings.getBoolean(CAN_UNDO, view.game.canUndo);
         view.game.gameState = settings.getInt(GAME_STATE, view.game.gameState);
         view.game.lastGameState = settings.getInt(UNDO_GAME_STATE, view.game.lastGameState);
+
     }
 
     /**
@@ -198,8 +199,8 @@ public class MainActivity extends ActionBarActivity {
      * 加载酷果广告
      */
     private void loadKGAds() {
-        BManager.showTopBanner(MainActivity.this, BManager.CENTER_BOTTOM, BManager.MODE_APPIN, Const.COOID, Const.QQ_CHID);
-        BManager.setBMListner(new ADSListener());
+//        BManager.showTopBanner(MainActivity.this, BManager.CENTER_BOTTOM, BManager.MODE_APPIN, Const.COOID, Const.QQ_CHID);
+//        BManager.setBMListner(new ADSListener());
     }
 
     private class ADSListener implements MyBMDevListner {
